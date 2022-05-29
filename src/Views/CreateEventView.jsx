@@ -9,17 +9,15 @@ const CreateEventView = () => {
   const navigate = useNavigate()
 
   const loading = useSelector(state => state.events.loading)
-  // const [loading, error ] = useSelector(state => state.events.loading)
-  // const [verification, setVerification] = useState(true)
-
+  // const [error, setError] = useState(false)
+  // const [error, setError] = useState()
   const [addedEvent, setAddedEvent] = useState(false)
 
   const [formData, setFormData] = useState({
     date: '',
     time: '',
     title: '',
-    body: '',
-    error: ''
+    body: ''
   })
 
 
@@ -36,29 +34,22 @@ const CreateEventView = () => {
     e.preventDefault()
 
     // if(formData.title.trim() === '') {
-    //   setVerification(false);
+    //   setError(true)
+    //   return 
+    // }
+
+    // setError(false)
+
+    // ----------------------------------------------
+
+    // if(formData.title.trim() === '') {
+    //   setError('Du måste skriva in en titel')
     //   return
     // }
     // else{
-    //   setVerification(true)
+    //   setError('')
     // }
 
-      if(formData.title.trim() === '') {
-        formData.title.error = ('You need to enter a title');
-        return
-      }
-      // else {
-      //   formdata.error = '' error(false)
-      // }
-
-      if(formData.body.trim() === '') {
-        formData.body.error = ('You need to enter what todo');
-        return
-      }
-
-
-    
-    
     dispatch(addEvent(formData))
     setAddedEvent(true)
   }
@@ -72,26 +63,32 @@ const CreateEventView = () => {
   return (
     <div className='create-post'>
       <h1>Skapa ett nytt event</h1>
+      {/* <> */}
       <form onSubmit={handleSubmit}>
       
       <label htmlFor="Date">Datum: </label>
       <input type="date" name='date' onChange={onChange} value={formData.date} placeholder='date' className='form-control' required/>
-      <p className='error'>error meddeland</p>
+      {/* {error && <p className='error'>Du måste fylla i fältet</p>} */}
+      {/* <p className='error'>{formData.date.error}</p> */}
       
       <label htmlFor="Time">Tid: </label>
       <input type="time" id='time' name='time' onChange={onChange} value={formData.time} placeholder='time' className='form-control' required/>
-      <p className='error'>error meddelande</p>
+      {/* {error && <p className='error'>Du måste fylla i fältet</p>} */}
+      {/* <p className='error'>{formData.time.error}</p> */}
         
       <label htmlFor="Title">Title: </label>
         <input type="text" name='title' onChange={onChange} value={formData.title} placeholder='Title' className='form-control' required/>
-        <p className='error'>{formData.title.error} error meddelande</p>
+        {/* {error && <p className='error'>Du måste fylla i fältet</p>} */}
+        {/* <p className='error'>{formData.title.error}</p> */}
         
         <label htmlFor="Body">Event: </label>
         <textarea name="body" onChange={onChange} value={formData.body} placeholder='Skriv in ditt event här...' className='form-control' cols="30" rows="10" required></textarea>
-        <p className='error'>{formData.body.error } error meddelande</p>
+        {/* {error && <p className='error'>Du måste fylla i fältet</p>} */}
+        {/* <p className='error'>{formData.body.error }</p> */}
         <button className='btn'>{ loading ? 'Laddar...' : 'Lägg till event'}</button>
-        {/* {!verification && <p>Title needs to have..</p>} */}
       </form>
+      {/* {error && <p className='error'>Du måste fylla i alla fälten</p>} */}
+      {/* </> */}
     </div>
   )
 }
