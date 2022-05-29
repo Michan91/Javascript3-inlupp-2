@@ -1,0 +1,37 @@
+{
+  "events": [
+    {
+      "date": "2022-05-23",
+      "time": "12:40",
+      "title": "Event 1",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid recusandae eveniet aut cumque cupiditate fugiat obcaecati. Eos ut, vero ducimus quo voluptate molestias voluptatem vel ex aut aliquid accusantium inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid recusandae eveniet aut cumque cupiditate fugiat obcaecati. Eos ut, vero ducimus quo voluptate molestias voluptatem vel ex aut aliquid accusantium inventore.",
+      "id": 1
+    },
+    {
+      "date": "2022-05-24",
+      "time": "15:48",
+      "title": "Event 2",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid recusandae eveniet aut cumque cupiditate fugiat obcaecati. Eos ut, vero ducimus quo voluptate molestias voluptatem vel ex aut aliquid accusantium inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid recusandae eveniet aut cumque cupiditate fugiat obcaecati. Eos ut, vero ducimus quo voluptate molestias voluptatem vel ex aut aliquid accusantium inventore.",
+      "id": 2
+    }
+  ],
+  "users": [
+    {
+      "email": "michan@live.se",
+      "password": "$2a$10$b/JbCMtVhhipEM2mY1SAD.I0VBWL2TcPyBkQt9q3/nqJFGsOCA9H2",
+      "firstName": "Michaela",
+      "lastName": "Karlsson",
+      "id": 1
+    },
+    {
+      "email": "love@live.se",
+      "password": "$2a$10$eU5Jt8tom4ygJLjqz4SIuuM6a3wsX1uxTF7nehEnJnhNVGsKBRCyO",
+      "firstName": "Love",
+      "lastName": "Dahlström",
+      "id": 2
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,38 +1,147 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  body, html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: #282828; */
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    width: 80%;
+    margin: 0 auto;
   }
-}
+  .navbar {
+    background-color: #000000;
+    padding: 1rem 0;
+  }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-brand {
+    color: #d104f0;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+    /* Blura texten? */
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    font-size: 1.1rem;
+  }
+  .nav-link:hover {
+    color: #d104f0;
+  }
+  .active {
+    text-decoration: underline;
+    color: #ae55ee;
+  }
+  
+  .post {
+    box-shadow: 5px 5px 10px #33333382;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .post h2 {
+    color: #d104f0;
+    margin-bottom: 1rem;
+  }
+  .create-post {
+    padding: 2rem 0;
+  }
+  
+  .create-post h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #bababa;
+    outline: none;
+  }
+  
+  .create-post textarea {
+    resize: none;
+  }
+  
+  .form-control:focus {
+    border: 1px solid #141414;
+  }
+  
+  .btn {
+    padding: .5em 1.2em;
+    border-radius: .5em;
+    border: 0;
+    background-color: #ae55ee;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .login-view {
+    padding-top: 2rem;
+  }
+  
+  .card {
+    border: 1px solid #3333332e;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 5px #3333332e;
+  }
+  
+  .card h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: .3rem;
+  }
+  
+  .link {
+    color: #d104f0;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  .card .btn {
+    margin-block: 1rem;
+  }
+  .error {
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    font-size: small;
+    color: #cb2121;
+  }

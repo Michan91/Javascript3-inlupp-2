@@ -1,0 +1,30 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "date": "170522",
+      "timestamp": "11:00",
+      "title": "Event 1",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!"
+    },
+    {
+      "id": 2,
+      "date": "180522",
+      "time": "12:00",
+      "title": "Event 2",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!"
+    },
+    {
+      "id": 3,
+      "date": "190522",
+      "time": "09:00",
+      "title": "Event 3",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi voluptate nostrum dolorum nihil, tenetur nisi, libero quidem fugiat, assumenda laboriosam vitae eaque eum eveniet optio vel nulla perferendis nemo!"
+    }
+  ],
+  "users": [
+    {
+      
+    }
+  ]
+}
